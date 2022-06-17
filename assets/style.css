@@ -1,0 +1,104 @@
+:root {
+    --offwhite: #06283D;
+    --teal:#1363DF;
+    --ocean:#47B5FF;
+    --darkblue:#DFF6FF;
+
+}
+
+/* Global Settings */
+* {
+    font-family: 'Montserrat';
+}
+
+
+/* Main Header */
+header{
+    background-color: var(--offwhite);
+    margin:auto;
+    padding:25px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    text-align: center;
+    color:white;
+}
+
+
+/* Navigation Bar */
+aside {
+    display:flex;
+    background-color: var(--darkblue);
+    width:fit-content;
+    padding: 10px;
+    align-items: flex-end;
+    position: fixed;
+    right: 0px;
+    opacity: 0.8;
+    top:75px;
+    z-index:10;
+}
+
+li {
+    text-decoration: none;
+    list-style:none;
+    font-size:25px;
+    line-height: 1.5;
+    opacity:1;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--offwhite);
+
+}
+
+/* Content */
+
+
+p {
+    margin-right:200px;
+    margin-left: 35px;
+    margin-top: 25px;
+
+}
+
+/* Footer */
+footer {
+    padding:10px;
+    margin:auto;
+    text-align: center;
+    background-color: var(--teal);
+}
+
+
+/* Temporary background image credit to shutterstock.com */
+.MainBanner{
+    height:500px;
+    width:100%;
+    margin-bottom:25px;
+    background-image: url("../assets/images/tempbackground.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+.AboutMe {
+    background-color: var(--ocean);
+    opacity: 0.8;
+    padding:25px;
+}
+
+.Portfolio{
+    background-color: var(--offwhite);
+    opacity: 0.8;
+    padding:25px;
+}
+
+.ContactMe{
+    background-color: var(--darkblue);
+    opacity: 0.8;
+    padding:25px;
+
+}
