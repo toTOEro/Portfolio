@@ -151,7 +151,7 @@ h5 {
 }
 
 .MainProject:hover {
-    box-shadow: inset 0px 0px 8px var(--teal);
+    box-shadow: inset 0px 0px 40px var(--darkblue);
 
 }
 
@@ -178,6 +178,10 @@ h5 {
     padding: 3px;
 }
 
+.SubProjects:hover {
+    box-shadow: inset 0px 0px 20px var(--darkblue);
+
+}
 
 /* Contact Me Styling */
 
