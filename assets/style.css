@@ -107,9 +107,10 @@ h5 {
     background-color: var(--offwhite);
     opacity: 0.8;
     padding: 25px;
+
 }
 
-.PortfolioCards a{
+.PortfolioCards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -120,9 +121,13 @@ h5 {
     /* align-items: stretch; */
 }
 
-.PortfolioCards img {
-    /* max-width: 100%;
-    max-height: 100%; */
+.card{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    flex: auto;
+    padding-top: 15px;
 
 }
 
@@ -170,17 +175,13 @@ h5 {
     background-color: var(--offwhite);
     opacity: 0.8;
     padding: 25px;
-    /* text-align: center; */
-}
-
-.ContactMe h3 {
     text-align: center;
 }
+
 
 .ContactMe a, li {
     color: var(--darkblue);
     font-size: 25px;
-
 }
 
 
