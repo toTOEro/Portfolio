@@ -16,14 +16,15 @@
 header {
     background-color: var(--darkblue);
     margin: auto;
-    padding: 25px;
+    width: 100%;
 
 }
 
 h1 {
     text-align: center;
     color: white;
-    font-size: 25px;
+    font-size: 35px;
+    padding: 10px;
 }
 
 
@@ -31,7 +32,7 @@ h1 {
 aside {
     display: flex;
     background-color: var(--darkblue);
-    width: fit-content;
+    /* width: fit-content; */
     padding: 10px;
     align-items: flex-end;
     position: fixed;
@@ -61,13 +62,13 @@ a {
 
 p {
     margin-right: 150px;
-    margin-top: 25px;
-
+    padding-top: 10px;
+    font-size: 20px;
 }
 
 h3 {
     text-decoration: underline;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 h5 {
@@ -121,41 +122,49 @@ h5 {
     /* align-items: stretch; */
 }
 
-.card{
-    display:flex;
+.card {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px;
     flex: auto;
     padding-top: 15px;
+}
+
+.maincard {
+    width: 100%;
 
 }
 
+.subcard {
+    width: 30vw;
+
+}
 
 .MainProject {
     font-size: 25px;
     height: 250px;
-    width: 100vw;
+    width: 96.5vw;
     border: var(--darkblue) solid;
     background-image: url(./images/websiteclipart.png);
     background-position-y: 36%;
 }
 
 .MainProject:hover {
-    box-shadow: inset 0px 0px 8px
-    var(--teal); 
+    box-shadow: inset 0px 0px 8px var(--teal);
 
 }
 
 .MainProject h5 {
     background-color: var(--darkblue);
-    color:var(--offwhite)
+    color: var(--offwhite);
+    padding: 3px;
 
 }
 
 .SubProjects {
     font-size: 25px;
-    /* width: 31vw; */
+    width: 31vw;
     border: var(--darkblue) solid;
     height: 150px;
     flex-basis: 30%;
@@ -165,37 +174,37 @@ h5 {
 
 .SubProjects h5 {
     background-color: var(--darkblue);
-    color:var(--offwhite)
+    color: var(--offwhite);
+    padding: 3px;
 }
 
 
 /* Contact Me Styling */
 
-.ContactMe {
+.contactMe {
     background-color: var(--offwhite);
     opacity: 0.8;
-    padding: 25px;
     text-align: center;
 }
 
 
-.ContactMe a, li {
+.contactMe a, li {
     color: var(--darkblue);
     font-size: 25px;
+    margin-bottom: 5px;
 }
 
 
-.ContactMe ul {
+.contactMe ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-top: 13px;
-    flex-grow:1;
-    flex-basis:33%;
+    flex-grow: 1;
     text-align: center;
 }
 
-.ContactMe li {
+.contactMe li {
     display: inline-block;
     position: relative;
     margin-left: auto;
@@ -207,36 +216,34 @@ h5 {
 
 /* Line Hover CSS Code Derived from https://www.30secondsofcode.org/css/s/hover-underline-animation */
 
-.ContactMe li:after {
+.contactMe li:after {
     content: '';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 1.5px;
+    height: 2px;
     bottom: 0;
     left: 0;
     background-color: var(--darkblue);
-    /* transform-origin: bottom right; */
     transform-origin: left right;
     transition: transform 0.5s ease-out;
 }
 
-.ContactMe li:hover:after {
+.contactMe li:hover:after {
     transform: scaleX(1);
     transform-origin: left right;
 }
 
 /* Footer */
 footer {
-    padding: 10px;
     margin: auto;
     text-align: center;
     background-color: var(--teal);
 }
 
 footer p {
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -261,8 +268,80 @@ footer p {
 }
 
 
+/* Tablet Sizing */
 
-/* 
-@media screen {
-    
-} */
+@media screen and (max-width: 992px) {
+    .subcard {
+        width: 31%;
+    }
+
+    .MainProject {
+        height: 200px;
+    }
+
+
+
+    p {
+        margin-right: unset;
+        margin-top: 5px;
+
+    }
+
+    /* Adjusting the side nav bar to a normal nav bar on top */
+    aside {
+        position: unset;
+        right: unset;
+        display: block;
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    li {
+        text-decoration: none;
+        list-style: none;
+        font-size: 20px;
+        line-height: 1.5;
+        opacity: 1;
+        display: inline;
+
+    }
+
+
+    a {
+        text-decoration: none;
+        color: var(--offwhite);
+    }
+
+
+}
+
+
+/* Large smartphone sizing */
+
+@media screen and (max-width: 768px) {
+    .subcard {
+        width: 80%;
+    }
+
+    .SubProjects {
+        height: 125px;
+    }
+
+
+    h3, h5 {
+        font-size: 20px;
+
+    }
+
+
+    .contactMe a {
+        font-size: 15px;
+    }
+
+
+}
