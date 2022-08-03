@@ -8,7 +8,7 @@ This is my first portfolio page containing:
 
 ![Portfolio Preview](./Assignment_2/assets/websitePreview.gif)
 
-This website is deployed at the following link: https://totoero.github.io/Module2_Assignment/
+This website is deployed at the following link: https://totoero.github.io/Portfolio/
 
 This project is entirely comprised of CSS and HTML language. Overall, the content is presentable however I would like to further improve upon it's design to become more unique/visually pleasing.
 
